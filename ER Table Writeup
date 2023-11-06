@@ -1,0 +1,99 @@
+Entities and Attributes:
+
+1. Customer
+   - Phone Number (PK)
+   - Email
+   - Password
+
+2. Profile
+   - Profile Picture
+   - Customer (FK)
+
+3. Payment Information
+   - Holder's Name
+   - ZipCode
+   - Card Number (PK)
+   - Pin
+   - Customer (FK)
+
+4. Financial Institution
+   - Name
+   - Address
+   - Account
+   - PhoneNumber
+
+5. Order
+   - ID (PK)
+   - Total Cost
+   - Date
+   - Payment Method (FK)
+   - Delivery Method
+   - Customer (FK)
+
+6. Restaurant
+   - Name
+   - Address (PK)
+   - Phone Number
+   - Menu (FK)
+
+7. Review
+   - User Name/Picture
+   - Star Rating
+   - Review Description
+   - Verification Status
+   - Restaurant (FK)
+
+8. Menu
+   - List of Sale Items
+   - Restaurant (FK)
+
+9. Employees
+   - EmployeeID (PK)
+   - PersonID (FK)
+   - SSN
+   - Specialities
+
+10. Vendors
+    - VendorID (PK)
+    - PersonID (FK)
+    - CompanyName
+    - Notes
+
+11. Persons
+    - PersonID (PK)
+    - FirstName
+    - LastName
+    - Email
+    - Address
+
+Relationships with Cardinalities:
+
+1. Customer (1) - USES - Profile (1)
+   - One Customer uses exactly one Profile
+
+2. Profile (1) - CAN HAVE - Previous Orders (N)
+   - One Profile can have zero or many Previous Orders
+
+3. Profile (1) - CONTAINS - Payment Information (1)
+   - One Profile contains one Payment Information
+
+4. Payment Information (1) - ASSOCIATED WITH - Financial Institution (1)
+   - One Payment Information is associated with one Financial Institution
+
+5. Customer (1) - SEARCHES FOR - Cuisines (N)
+   - One Customer can search for many Cuisines
+
+6. Customer (1) - SEARCHES FOR - Restaurants (N)
+   - One Customer can search for many Restaurants
+
+7. Restaurant (1) - HAS - Menu (1)
+   - One Restaurant has exactly one Menu
+
+8. Restaurant (1) - IS REVIEWED IN - Reviews (N)
+   - One Restaurant can be reviewed in many Reviews
+
+9. Employees (N) - ARE TYPES OF - Persons (1)
+   - Many Employees are one type of Person
+
+10. Vendors (N) - ARE TYPES OF - Persons (1)
+    - Many Vendors are one type of Person
