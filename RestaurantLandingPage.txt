@@ -1,0 +1,20 @@
+class RestaurantLandingPage {
+    Restaurant restaurant
+    DeliveryOptions deliveryOptions
+    PaymentOptions paymentOptions
+
+    editMenu(newMenu):
+        restaurant -> menu = newMenu
+    editRestaurantName(newName):
+        restaurant -> name = newName
+    editRestaurantAddress(newAddress):
+        restaurant -> address = newAddress
+    editRestaurantPhoneNumber(newNumber):
+        restaurant -> phoneNumber = newNumber
+    viewReviews():
+        go to reviews associated with restaurant
+    editDeliveryOptions(newDeliveryOptions):
+        deliveryOptions = newDeliveryOptions
+    editPaymentOptions(newPaymentOptions):
+        paymentOptions = newPaymentOptions
+}

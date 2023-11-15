@@ -1,0 +1,6 @@
+class Location {
+    turnOn():
+        turns user location on
+    turnOff():
+        turns user location off
+}

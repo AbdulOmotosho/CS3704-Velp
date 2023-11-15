@@ -1,0 +1,8 @@
+class SearchBar {
+    String textBox
+    search():
+        queries the Restaurant database for strings fuzzy matching the textBox
+
+    searchByCuisine():
+        queries the Restaurant databse for descriptions that fuzzy contain cuisine
+}

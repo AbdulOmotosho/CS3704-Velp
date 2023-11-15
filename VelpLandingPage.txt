@@ -1,0 +1,51 @@
+class VelpLandingPage
+{
+    Restaurant[] restaurants
+    Review[] reviews
+    Location location
+    SearchBar searchBar
+    Cart cart
+    Profile profile
+    Settings settings
+
+    switchLocationStatus():
+        if location is on:
+            location.turnOff()
+        else:
+            location.turnOn()
+    
+    switchCampusFilter():
+        if on campus:
+            go to Off Campus recommendations
+        else:
+            go to On Campus recommendations
+    
+    editProfile():
+        changeName(newName):
+            profile -> userNname = newName
+        changePicture(newPicture):
+            profile -> profilePicture = newPicture
+        changeBio(newBio):
+            profile -> bio = newBio
+    
+    editSettings():
+        changefirstName(newName):
+            settings -> firstName = newName
+        changeLastName(newName):
+            settings -> lastName = newName
+        changeEmail(newEmail):
+            settings -> email = newEmail
+        changePhoneNumber(newNumber):
+            settings -> phoneNumber = newNumber
+        changeAddress(newAddress):
+            settings -> address = newAddress
+        changePreferences(newPreferences)
+            settings -> preferences = newPreferences
+
+    viewOrders():
+        goto OrderPage
+    
+    logOut():
+        exit application
+
+}

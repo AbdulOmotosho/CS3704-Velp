@@ -1,0 +1,5 @@
+OrderPage {
+    Order[] orders
+    buyAgain():
+        places a request to the restaurant for this order
+}

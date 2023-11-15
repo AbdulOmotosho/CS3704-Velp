@@ -1,0 +1,14 @@
+class AdminLandingPage
+{
+    editReview():
+        if Review is deemed inappropriate:
+            remove Review 
+        if Review is seen as amazing:
+            pin editReview
+
+    banUser():
+        if user's behavior has been seen as inappropriate:
+            remove user
+        else:
+            unflag user
+}

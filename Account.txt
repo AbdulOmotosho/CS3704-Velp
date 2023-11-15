@@ -1,0 +1,19 @@
+class Account {
+    String name
+    String dateOfBirth
+    String socialSecurity
+    String address
+    String email
+    String phoneNumber
+    String accountNumber
+    String routingNumber
+    String[] accountInfo 
+
+    createAccount():
+        accountInfo = [name, dateOfBirth, socialSecurity, 
+        address, email, phoneNumber, accountNumber, routingNumber]
+        
+    editAccount(newAccountInfo):
+        accountInfo = newAccountInfo
+        
+}
