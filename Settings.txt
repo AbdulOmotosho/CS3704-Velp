@@ -1,0 +1,28 @@
+class Settings
+{
+    String firstName: persons first name
+    String lastName: persons last name
+    String email: persons email
+    int phoneNumber: persons phone number
+    String address: persons address
+    boolean[] preferences: persons app preferences 
+
+    verifyUser(String verificationMethod)
+        if verificationMethod = 'email'
+            send email to email address with link to verify account 
+        else if verificationMethod = 'phone'
+            send text to phoneNumber with link to verify account
+        else
+            print invalid verificationMethod
+
+    changePhoneNumber(int newNumber)
+        phoneNumber = newNumber
+        verifyUser('phone')
+
+    turnOnNotifications()
+        set corresponding boolean in preferences[] to true
+    
+    changePreferences(boolean[] newPreferences)
+        preferences = newPreferences
+
+}

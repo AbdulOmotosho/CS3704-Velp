@@ -1,0 +1,9 @@
+class RestaurantLoginPage
+{
+    RestaurantName: name of restaurant displayed
+    
+    verifyRestaurant(Restaurant r)
+        check if all attributes of restaurant field are the same as info gotten from online
+            if they are: return true
+        else return false
+} 

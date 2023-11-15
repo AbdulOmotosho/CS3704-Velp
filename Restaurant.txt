@@ -1,0 +1,22 @@
+class Restaurant 
+{
+    Fields:
+        String Name: name of restaurant
+        String Address: address of restaurant
+        int Phone: phone number of restaurant
+        int Number: restaurant number identifier
+
+    getName() return name
+    getAddress() return address
+    getPhone() return phone
+    getNumber() return number
+
+    setName() set name
+    setAddress() set address
+    setPhone() set phone
+    setNumber() set number
+
+
+
+
+}

@@ -1,0 +1,13 @@
+class RestaurantProfile
+{
+    Restaurant restaurant: rhe restaurant
+    String restaurantName: name of Restaurant
+    Menu menu: the restaurants' menu
+
+    changeMenu(Menu newMenu)
+        menu = newMenu
+
+    verifyRestaurant()
+        call verifyRestaurant(restaurant) //gotten from the restaurantLoginPage class
+
+}

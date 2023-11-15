@@ -1,0 +1,13 @@
+class Profile
+{
+    String userName: users username
+    Review[] reviews: stores all of the users past reviews
+    String bio: users bio displayed on their profile
+    Image profilePicture: users profile picture displayed on their profile
+
+    editBio(String newBio)
+        bio = newBio
+
+    changePicture(Image newPicture)
+        profilePicture = newPicture
+}

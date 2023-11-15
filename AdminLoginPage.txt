@@ -1,0 +1,9 @@
+class AdminLoginPage
+{
+    String code: unique admin code
+
+    forgotCode(): ran if the admin forgot their code to login
+        //provide phone number to call for recovery
+        return recoveryNumber
+
+}

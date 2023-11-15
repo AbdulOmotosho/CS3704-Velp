@@ -1,0 +1,10 @@
+class Admin
+{
+    int ID: unique admin ID
+    String code: unique admin code
+
+    verify():
+        if ID is found in app admin database
+         and code is found in app admin database: return true
+        else: return false
+}

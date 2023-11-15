@@ -1,0 +1,23 @@
+class Person
+{
+    String firstName: persons first name
+    String lastName: persons last name
+    String email: persons email
+    int phone: persons phone number
+    int number: persons unique assigned number id
+    String address: persons address 
+
+    getFirstName() return firstName
+    getLastName() return lastName
+    getEmail() return email
+    getAddress() return address
+    getPhone() return phone
+    getNumber() return number
+
+    setFirstName() set firstName
+    setLastName() set lastName
+    setEmail() set email
+    setAddress() set address
+    setPhone() set phone
+    setNumber() set number
+} 

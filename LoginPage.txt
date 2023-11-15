@@ -1,0 +1,19 @@
+class LoginPage
+{
+    String userName: persons account userName
+    String password: persons account password
+
+    changeUserName(String newUsername)
+        userName = newUsername
+
+    forgotPassword()
+        print web link with password reset process
+
+    createAccount(String newUsername, String newPassword)
+        userName = newUsername
+        password = newPassword
+        create Person(String firstName, String lastNmae, String email, int phone, String address)
+        //add Person to Velps' user database
+
+    
+}
